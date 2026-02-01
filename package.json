@@ -21,5 +21,6 @@
     "patterns",
     "hero-patterns"
   ],
-  "main": "./src/index.js"
+  "main": "./src/index.js",
+  "type": "module"
 }
