@@ -3,11 +3,11 @@ import patterns from './patterns.js';
 
 export default plugin(
   ({ addUtilities, theme }) => {
-    const allowedShades = theme('patternsShades', []);
-    const allowedColors = theme('patternsColors', []);
-    const allowedOpacities = theme('patternsOpacities', ['10', '50', '90']);
+    const allowedShades = theme('patternShade', []);
+    const allowedColors = theme('patternColor', []);
+    const allowedOpacities = theme('patternOpacity', ['10', '50', '90']);
 
-    const patterns = theme('patterns', {});
+    const patterns = theme('pattern', {});
     const colors = theme('colors', {});
     const opacity = Object.fromEntries(
       Object.entries(theme('opacity', {})).filter(
@@ -58,7 +58,7 @@ export default plugin(
   },
   {
     theme: {
-      patterns,
+      pattern: patterns,
     },
   }
 );
